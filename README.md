@@ -1,2 +1,2 @@
-# youtube-2007-recreation
-[php] [mysqli] a recreation of 2007 youtube
+# 2007yt
+**2007yt** is a recreation of YouTube in 2007 using PHP and MySQLi.
