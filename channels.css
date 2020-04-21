@@ -1,0 +1,12 @@
+.user-picture{
+	width: 100px;
+	height: 100px;
+}
+.user-info{
+	font-size: 12px;
+	flex: 1 0 5em;
+	color: #666;
+}
+.number{
+	color: #000;
+}

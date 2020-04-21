@@ -1,0 +1,93 @@
+body {
+        padding: 0px;
+        margin: auto;
+        width: 50em; /* We need more SPACE! */
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+    hr{
+        margin: 5px 0px; 
+        border-style: dotted;
+        border-width: 0.5px;
+        border-color: #aaa;
+    }
+    .header{
+        border-radius: 10px 10px 0 0;
+        background: linear-gradient(#bbb, #ddd);
+        display: flex;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .header center{
+        text-align: unset;
+        margin: auto;
+    }
+    body center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    body center > *{
+        margin: 0px 5px;
+    }
+    body center a button{
+        cursor: pointer;
+        color: #0022cc;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 7px 35px;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #ccddff;
+        background: linear-gradient(#ffffff, #ccddff);
+        border-bottom: 0px;
+    }
+    .container-flex{
+        display: flex;
+    }
+    /* Bootstrap-like grid system */
+    /* Two numbers acting like a fraction */
+    .col-1-2{
+        flex: 1 1 50%;
+        padding: 5px;
+    }
+    .col-1-3{
+        flex: 1 1 33.33%;
+        padding: 5px;
+    }
+    .col-2-3{
+        flex: 1 1 66.66%;
+        padding: 5px;
+    }
+    html, body{
+        font-family: "Arial", "Helvetica", sans-serif;
+    }
+    .card.login .card-header{
+        border-radius: 7px 7px 0 0;
+        background: #ccc;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .card.login .card-content{
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-top: 0px;
+        font-size: 12px;
+    }
+
+    .card.message{
+        color: #000;
+        background-color: #ffffdd;
+        border: 1px solid #ffddaa;
+        padding: 7px 15px;
+        font-size: 12px;
+        border-radius: 7px;
+    }
+    .card.message .card-header{
+        font-weight: bold;
+        color: #aa6600;
+        margin-bottom: 7px;
+        font-size: 16px;
+    }
+    a{
+        color: #0022cc;
+    }

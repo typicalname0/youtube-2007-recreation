@@ -1,28 +1,41 @@
-<?php
-include("header.php");
-?>
-<div class="flexBoxThing">
-    <div class="topLeft">
-<?php
-$stmt = $conn->prepare("SELECT * FROM users");
-$stmt->bind_param("s", $_POST['fr']);
-$stmt->execute();
-$result = $stmt->get_result();
-if($result->num_rows === 0) exit('No rows');
-while($row = $result->fetch_assoc()) {
-    echo "<small><span style='float: right;'><a href='profile.php?id=" . $row['id'] . "'>" . $row['username'] . "</a></span><br>";
-    echo "<span style='float: right;'>" . $row['subscribers'] . " subscribers</span></small>";
-    echo "<img style='width:100px;' src='pfp/" . $row['pfp'] . "'>";
-    echo "<hr>";
-}
-$stmt->close();
-?>
-    </div>
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="global.css">
+	<link rel="stylesheet" type="text/css" href="channels.css">
+</head>
+<body>
+	<?php include "header.php"; ?>
+		<div class="container-flex">
+	    <div class="col-2-3">
+			<?php
+			$statement = $mysqli->prepare("SELECT * FROM users ORDER BY subscribers DESC");
+			$statement->execute();
+			$result = $statement->get_result();
+			if($result->num_rows !== 0){
+				while($row = $result->fetch_assoc()) {
+				    echo "
+				    <div class='user container-flex'>
+					    <div class='col-2-3'><a href='profile.php?id=".$row["id"]."'><img class='user-picture' src='pfp/".$row['pfp']."'></a></div>
+					    <div class='user-info col-1-3'>
+						    <div><a href='profile.php?id=".$row['id']."'>".$row['username']."</a></div>
+						    <div><span class='number'>".$row['subscribers']."</span> subscribers</div>
+					    </div>
+				    </div>
+				    <hr>";
+				}
+			}
+			else{
+				echo "There are no channels here. Why don't you make one?";
+			}
+			$statement->close();
+			?>
+	    </div>
 
 
-<div class="topRight">
-    <div class="message">
-    Viewing channels is still buggy. Report bugs to the owner.
-    </div>
-</div>
-</div>
+	<div class="col-1-3">
+	    <div class="card message">
+	    Viewing channels is still buggy. Report bugs to the owner.
+	    </div>
+	</div>
+	</div>
+</body>
