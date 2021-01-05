@@ -1,0 +1,136 @@
+body {
+    padding: 0px;
+    margin: auto;
+    width: 50em;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+hr {
+    margin: 5px 0px;
+    border-style: dotted;
+    border-width: 0.5px;
+    border-color: #aaa;
+}
+
+.header {
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(#bbb, #ddd);
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.header center {
+    text-align: unset;
+    margin: auto;
+}
+
+body center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body center > * {
+    margin: 0px 5px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.col-1-2 {
+    flex: 1 1 50%;
+    padding: 5px;
+}
+
+.col-1-3 {
+    flex: 1 1 33.33%;
+    padding: 5px;
+}
+
+.col-2-3 {
+    flex: 1 1 66.66%;
+    padding: 5px;
+}
+
+.col-1-4 {
+    flex: 1 1 25%;
+    padding: 5px;
+}
+
+.col-generic {
+    flex: 1 1;
+}
+.col-nogrow{
+    flex: 0 1;
+}
+html, body {
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.card.message {
+    color: #000;
+    background-color: #ffffdd;
+    border: 1px solid #ffddaa;
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 7px;
+}
+
+.card{
+    margin: 5px 0px;
+}
+
+.card.message .card-header {
+    font-weight: bold;
+    color: #aa6600;
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
+a {
+    color: #0022cc;
+}
+
+.input-group{
+    margin: 5px 0px;
+    display: flex;
+}
+.card.blue, .card.gray{
+    padding: 10px;
+    font-size: 12px;
+}
+.card.blue{
+    background-color: #ddeaff;
+    border: 1px solid #6699cc;
+}
+.card.gray{
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.input-group label{
+    font-weight: bold;
+    text-align: right;
+    vertical-align: middle;
+    margin: auto;
+    margin-top: .25em;
+}
+.input-group > *{
+    padding: 0px;
+    width: 50%;
+    max-width: 50%;
+    min-width: 50%;
+}
+.input-group > *:last-child{
+    margin-left: 5px;
+}
+input{
+    box-sizing: border-box;
+}
+.red{
+    color: #ff0000;
+}
+.black{
+    color: #000;
+}
