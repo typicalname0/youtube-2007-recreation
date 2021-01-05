@@ -1,0 +1,36 @@
+.user-pic{
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	border: 1px solid #fff;
+    outline: 1px solid #999;
+    background: #fff;
+}
+.user-info{
+	font-size: 12px;
+	color: #666;
+}
+.user-stats{
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: top;
+}
+.username a{
+	font-weight: bold;
+	font-size: 18px;
+}
+.subscribers{
+	font-weight: bold;
+}
+.current-description{
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+}
+textarea{
+	resize: vertical;
+}
+h3{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
